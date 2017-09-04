@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "66911602538",
+    "firebase_url": "https://fireauthenticate.firebaseio.com",
+    "project_id": "fireauthenticate",
+    "storage_bucket": "fireauthenticate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66911602538:android:710c850a2b194564",
+        "android_client_info": {
+          "package_name": "app.nirmlkar.dalejan.fireauthenticate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66911602538-miqq5bbjm3bjar4bi13eh0i3pjh6lbtu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.nirmlkar.dalejan.fireauthenticate",
+            "certificate_hash": "af95d29cd35da12c2414043677e1ebcac3a29d76"
+          }
+        },
+        {
+          "client_id": "66911602538-voe91t5qm6dh01db5a2ommenarjr3idf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnnfo3SnM9wL2t-xvRg1WgbVaOmMVE6gU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66911602538-voe91t5qm6dh01db5a2ommenarjr3idf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
