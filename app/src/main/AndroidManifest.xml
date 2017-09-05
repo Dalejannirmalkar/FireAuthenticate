@@ -11,39 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity"
-            android:label="Dashboard"
+        <activity
+            android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
-
+            android:label="Dashboard"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".Signup"
-            android:label="Signup"
             android:configChanges="orientation|keyboardHidden"
+            android:label="@string/appp_name"
             android:windowSoftInputMode="stateHidden|adjustPan">
 
-            <intent-filter>
-
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-
-            </intent-filter>
-
         </activity>
-
         <activity
-            android:configChanges="keyboardHidden"
-            android:windowSoftInputMode="stateHidden|adjustPan"
             android:name=".Login"
-            android:label="Login"/>
-
-        <activity android:name=".ResetPassword"
             android:configChanges="keyboardHidden"
-            android:windowSoftInputMode="stateHidden|adjustPan"
-            android:label="@string/btn_reset_password"/>
+            android:label="Login"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ResetPassword"
+            android:configChanges="keyboardHidden"
+            android:label="@string/btn_reset_password"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
 
+        <activity android:name=".Flash">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
