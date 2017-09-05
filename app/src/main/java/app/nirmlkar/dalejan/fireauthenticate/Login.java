@@ -59,7 +59,8 @@ public class Login extends AppCompatActivity {
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   startActivity(new Intent(Login.this, ResetPasswordActivity.class));
+                startActivity(new Intent(Login.this, ResetPassword.class));
+                finish();
             }
         });
 
