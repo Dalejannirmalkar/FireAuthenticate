@@ -22,6 +22,7 @@ public class Login extends AppCompatActivity {
     private EditText inputEmail, inputPassword;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
+    Authenticateclass authenticateclass;
     private Button btnSignup, btnLogin, btnReset;
 
     @Override
@@ -29,7 +30,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        auth = FirebaseAuth.getInstance();
+        auth =authenticateclass.Authenticate();
 
         if (auth.getCurrentUser() != null) {
             startActivity(new Intent(Login.this, MainActivity.class));
@@ -47,7 +48,7 @@ public class Login extends AppCompatActivity {
         btnReset = (Button) findViewById(R.id.btn_reset_password);
 
         //Get Firebase auth instance
-        auth = FirebaseAuth.getInstance();
+        auth =authenticateclass.Authenticate();
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override

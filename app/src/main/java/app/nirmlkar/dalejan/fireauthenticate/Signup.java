@@ -24,13 +24,15 @@ public class Signup extends AppCompatActivity {
     private Button btnSignIn, btnSignUp, btnResetPassword;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
+    Authenticateclass authenticateclass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        authenticateclass=new Authenticateclass();
 
-        auth = FirebaseAuth.getInstance();
+        auth = authenticateclass.Authenticate();
 
         btnSignIn = (Button) findViewById(R.id.sign_in_button);
         btnSignUp = (Button) findViewById(R.id.sign_up_button);

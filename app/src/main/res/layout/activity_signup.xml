@@ -10,6 +10,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
+        android:focusable="true"
         android:layout_height="fill_parent"
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
@@ -26,12 +27,16 @@
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/email"
                 android:clickable="true"
                 android:focusableInTouchMode="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -44,6 +49,9 @@
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
             android:layout_height="wrap_content">
 
             <EditText
