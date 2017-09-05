@@ -11,25 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity"
-            android:label="Dashboard"/>
+            android:label="Dashboard"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
 
         <activity
             android:name=".Signup"
-            android:label="Signup">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="Signup"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan">
 
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+
         </activity>
 
         <activity
+            android:configChanges="keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan"
             android:name=".Login"
-            android:label="Login"></activity>
+            android:label="Login"/>
 
         <activity android:name=".ResetPassword"
-            android:label="@string/btn_reset_password"></activity>
+            android:configChanges="keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:label="@string/btn_reset_password"/>
+
+
     </application>
 
 </manifest>

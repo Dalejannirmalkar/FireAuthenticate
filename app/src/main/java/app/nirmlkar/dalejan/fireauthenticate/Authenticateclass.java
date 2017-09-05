@@ -8,10 +8,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Authenticateclass {
 
-    private FirebaseAuth auth;
 
-    public FirebaseAuth Authenticate(){
-auth=FirebaseAuth.getInstance();
-return auth;
+    public FirebaseAuth Authenticate() {
+        FirebaseAuth auth;
+        auth = FirebaseAuth.getInstance();
+        return auth;
     }
 }

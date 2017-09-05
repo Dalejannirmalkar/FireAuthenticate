@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
             changeEmail, changePassword, sendEmail, remove, signOut;
-
+Authenticateclass authenticateclass;
     private EditText oldEmail, newEmail, password, newPassword;
     private ProgressBar progressBar;
     private FirebaseAuth.AuthStateListener authListener;
@@ -31,12 +31,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        authenticateclass=new Authenticateclass();
         
         //get firebase auth instance
-        auth = FirebaseAuth.getInstance();
+        auth =authenticateclass.Authenticate();
 
         //get current user
-        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        final FirebaseUser user = authenticateclass.Authenticate().getCurrentUser();
 
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
